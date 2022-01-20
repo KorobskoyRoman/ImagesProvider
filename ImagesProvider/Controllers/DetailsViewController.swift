@@ -23,6 +23,7 @@ class DetailsViewController: UIViewController {
             let destVC = segue.destination as! SourceImageViewController
             let image = imageModel
             destVC.urlString = image
+//            destVC.showSource(withUrl: image)
         }
     }
 }
