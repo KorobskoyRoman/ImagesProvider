@@ -52,8 +52,6 @@ class SearchViewController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        print(images?.images.count ?? 1)
         return images?.images.count ?? 1
     }
 
