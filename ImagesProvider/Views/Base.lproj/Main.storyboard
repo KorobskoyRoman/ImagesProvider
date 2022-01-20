@@ -68,7 +68,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyW-sr-4hR">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyW-sr-4hR">
                                 <rect key="frame" x="57" y="228" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="9PV-fT-vRe"/>
@@ -82,30 +82,15 @@
                                     <segue destination="0yW-Fx-Eft" kind="showDetail" identifier="ShowSource" id="pPF-Bz-bGD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMT-cn-Cu3">
-                                <rect key="frame" x="57" y="536" width="76" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcH-ZZ-Y9l">
-                                <rect key="frame" x="281" y="536" width="76" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PwZ-LT-9xe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tyW-sr-4hR" firstAttribute="centerX" secondItem="G86-Zt-VTa" secondAttribute="centerX" id="0pj-lw-eCQ"/>
+                            <constraint firstItem="tyW-sr-4hR" firstAttribute="centerX" secondItem="G86-Zt-VTa" secondAttribute="centerX" id="3qh-gP-rao"/>
+                            <constraint firstItem="tyW-sr-4hR" firstAttribute="centerX" secondItem="If2-Hm-eGK" secondAttribute="centerX" id="JqU-LV-72O"/>
                             <constraint firstItem="tyW-sr-4hR" firstAttribute="top" secondItem="PwZ-LT-9xe" secondAttribute="top" constant="88" id="Jzt-Ld-Xai"/>
-                            <constraint firstItem="tyW-sr-4hR" firstAttribute="leading" secondItem="PwZ-LT-9xe" secondAttribute="leading" constant="57" id="KuH-gp-ogP"/>
                             <constraint firstItem="G86-Zt-VTa" firstAttribute="top" secondItem="tyW-sr-4hR" secondAttribute="bottom" constant="90" id="YhS-f6-Gke"/>
-                            <constraint firstItem="PwZ-LT-9xe" firstAttribute="trailing" secondItem="G86-Zt-VTa" secondAttribute="trailing" constant="152" id="gxW-0l-ard"/>
-                            <constraint firstItem="G86-Zt-VTa" firstAttribute="leading" secondItem="PwZ-LT-9xe" secondAttribute="leading" constant="152" id="weJ-79-zXt"/>
+                            <constraint firstItem="tyW-sr-4hR" firstAttribute="leading" secondItem="PwZ-LT-9xe" secondAttribute="leading" constant="57" id="j6h-us-X2L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="msL-6I-NbR"/>
@@ -124,29 +109,10 @@
                     <view key="view" contentMode="scaleToFill" id="XaA-YA-MdQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zj-SU-Yn2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="E51-kx-f6r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="3zj-SU-Yn2" secondAttribute="bottom" id="3Rc-bg-Byl"/>
-                            <constraint firstItem="3zj-SU-Yn2" firstAttribute="top" secondItem="XaA-YA-MdQ" secondAttribute="top" id="Kkp-1W-7f0"/>
-                            <constraint firstItem="3zj-SU-Yn2" firstAttribute="leading" secondItem="E51-kx-f6r" secondAttribute="leading" id="apS-Ug-VTa"/>
-                            <constraint firstItem="3zj-SU-Yn2" firstAttribute="trailing" secondItem="E51-kx-f6r" secondAttribute="trailing" id="ceS-nT-Wuo"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bhI-rQ-PTI"/>
-                    <connections>
-                        <outlet property="imageWebView" destination="3zj-SU-Yn2" id="b7d-dA-y6l"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QI-E0-5ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,8 +138,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backward.fill" catalog="system" width="128" height="79"/>
-        <image name="forward.fill" catalog="system" width="128" height="79"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

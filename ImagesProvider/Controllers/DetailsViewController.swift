@@ -15,6 +15,10 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        set(image: imageModel)
+    }
+    
+    func set(image: String) {
         Nuke.loadImage(with: imageModel, into: imageDetail)
     }
     
@@ -23,7 +27,6 @@ class DetailsViewController: UIViewController {
             let destVC = segue.destination as! SourceImageViewController
             let image = imageModel
             destVC.urlString = image
-//            destVC.showSource(withUrl: image)
         }
     }
 }

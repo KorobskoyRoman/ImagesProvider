@@ -27,6 +27,7 @@
 		9C867EAA2795D5B900614023 /* ImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
 		9C867EAC2795FE8200614023 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		9C867EAE2798E28D00614023 /* SourceImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceImageViewController.swift; sourceTree = "<group>"; };
+		9C867EB3279A089700614023 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		9CC272122795B727001770BD /* ImagesProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagesProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC272152795B727001770BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC272172795B727001770BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		9CC272142795B727001770BD /* ImagesProvider */ = {
 			isa = PBXGroup;
 			children = (
+				9C867EB3279A089700614023 /* Readme.md */,
 				9CC2722E2795BB9C001770BD /* Support files */,
 				9CC2722B2795BB7D001770BD /* Models */,
 				9CC2722C2795BB8B001770BD /* Views */,
